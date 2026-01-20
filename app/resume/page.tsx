@@ -1,38 +1,49 @@
-
-import Link from 'next/link';
+import Link from "next/link";
 import samples from "@/src/sampleData";
 
-
-export default function Resume () {
-    return (
-    <section className="flex items-start justify-center gap-7 bg-gray-100 p-10 m-8 w-full h-screen rounded-lg shadow-lg">
-        {samples.map( (sample, i) => (
-            <div key={i} className="bg-white rounded-lg shadow-md">
-                <div>
-                    <img 
-                        src="/flower-background.jpg" 
-                        alt="sample image" 
-                    />
-                    <div className="p-7">
-                        <h5 className="m-2 text-2xl text-gray-900">
-                            {sample.title}
-                        </h5>
-                        <p className="font-normal text-gray-500">
-                            {sample.description}
-                        </p>
-                    </div>
-                </div>
-                <div className="pb-5">
-                    <Link 
-                        href={`/samples/${sample.filename}`} 
-                        scroll={false}
-                        className="text-blue-400"
-                    >
-                        Learn more
-                    </Link>
-                </div>
-            </div>            
+export default function Resume() {
+  return (
+    <div className="text-center pt-20 pb-15 px-10 bg-gray-100">
+      <h1 className="font-bold text-2xl sm:text-3xl p-3">Portfolio Samples</h1>
+      <h2 className="text-lg sm:text-xl">Andrea Dao</h2>
+      <p>Developer Content Creator, Documentation Technical Writer</p>
+      <section className="grid sm:grid-cols-2 lg:grid-cols-3 justify-center gap-x-[3%] ">
+        {samples.map((sample, i) => (
+          <div
+            key={i}
+            className="mt-15 bg-white rounded-lg shadow-lg flex flex-col justify-between"
+          >
+            <p>{sample.type}</p>
+            <img
+              className="rounded-t-lg"
+              src="/pencil.jpg"
+              alt="sample image"
+            />
+            <div className="p-3">
+              <h3 className="pb-2 text-lg sm:text-xl text-gray-900">
+                {sample.title}
+              </h3>
+              <p className="text-gray-500">{sample.description}</p>
+            </div>
+            <div className="flex gap-4 justify-center bg-amber-100 rounded-b-lg">
+              <Link
+                href={`/samples/${sample.filename}`}
+                scroll={false}
+                className="text-blue-400"
+              >
+                Learn more
+              </Link>
+              <Link
+                href={`${sample.sampleURL}`}
+                scroll={false}
+                className="text-blue-400"
+              >
+                View sample
+              </Link>
+            </div>
+          </div>
         ))}
-    </section>
-    )
+      </section>
+    </div>
+  );
 }

@@ -1,17 +1,73 @@
+import Link from "next/link";
+
+import samples from "@/src/sampleData";
+
 export default function PDFPage({ params }: { params: { sample: string } }) {
   const { sample } = params;
+  const sampleItem = samples.find((el) => el.filename === sample);
+
   return (
     <>
-      <h1 className="text-2xl mb-5">{sample}</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
-        ex sapien vitae pellentesque sem placerat. In id cursus mi pretium
-        tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
-        Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper
-        vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
-        inceptos himenaeos.
-      </p>
+      <div className="text-center pt-20 pb-15 px-10 bg-gray-100">
+        <h1 className="font-bold text-2xl sm:text-3xl p-3">
+          Portfolio Samples
+        </h1>
+        <h2 className="text-lg sm:text-xl">Andrea Dao</h2>
+        <p>Developer Content Creator, Documentation Technical Writer</p>
+        <section className="grid sm:grid-cols-2 lg:grid-cols-3 justify-center gap-x-[3%] ">
+          {samples.map((sample, i) => (
+            <div
+              key={i}
+              className="mt-15 bg-white rounded-lg shadow-lg flex flex-col justify-between"
+            >
+              <p>{sample.type}</p>
+              <img
+                className="rounded-t-lg"
+                src="/pencil.jpg"
+                alt="sample image"
+              />
+              <div className="p-3">
+                <h3 className="pb-2 text-lg sm:text-xl text-gray-900">
+                  {sample.title}
+                </h3>
+                <p className="text-gray-500">{sample.description}</p>
+              </div>
+              <div className="flex gap-4 justify-center bg-amber-100 rounded-b-lg">
+                <Link
+                  href={`/samples/${sample.filename}`}
+                  scroll={false}
+                  className="text-blue-400"
+                >
+                  Learn more
+                </Link>
+                <Link
+                  href={`${sample.sampleURL}`}
+                  scroll={false}
+                  className="text-blue-400"
+                >
+                  View sample
+                </Link>
+              </div>
+            </div>
+          ))}
+        </section>
+      </div>
+      <dialog
+        className="fixed top-[15%] left-1/7 w-3/4 h-3/4 bg-gray-300 p-8 rounded border-none shadow-lg z-[9999]"
+        open
+      >
+        <h1 className="text-lg sm:text-xl mb-5">{sampleItem?.title}</h1>
+        <div className="overflow-y-auto pr-4 h-[70%] sm:h-3/4">
+          <p className="text-left whitespace-pre-line">{sampleItem?.about}</p>
+        </div>
+        <Link
+          href="/resume"
+          scroll={false}
+          className="fixed right-[20%] top-[82%] sm:top-[80%] sm:right-[15%] z-[10000] py-3 font-medium text-blue-800"
+        >
+          Close
+        </Link>
+      </dialog>
     </>
   );
 }
