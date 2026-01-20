@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import sampleData from '@/src/sampleData';
 
-export default async function InterceptedPage( {params}: { params: { sample: string } }) {
+export default async function InterceptedPage( {params}: { params: Promise<{ sample: string }> }) {
 
     const { sample } = await params;
     const sampleItem = sampleData.find( (el) => el.filename === sample );

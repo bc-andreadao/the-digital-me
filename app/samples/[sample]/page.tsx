@@ -2,8 +2,8 @@ import Link from "next/link";
 
 import samples from "@/src/sampleData";
 
-export default function PDFPage({ params }: { params: { sample: string } }) {
-  const { sample } = params;
+export default async function PDFPage({params}: { params: Promise<{ sample: string }> }) {
+  const { sample } = await params;
   const sampleItem = samples.find((el) => el.filename === sample);
 
   return (
