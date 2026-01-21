@@ -2,7 +2,6 @@ import React from "react";
 
 interface Props {
     modal: React.ReactNode;
-    workExperience: React.ReactNode;
     children: React.ReactNode;
 }
 
