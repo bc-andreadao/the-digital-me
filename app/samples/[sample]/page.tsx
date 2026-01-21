@@ -8,7 +8,7 @@ export default async function PDFPage({
   params: Promise<{ sample: string }>;
 }) {
   const { sample } = await params;
-  const sampleItem = samples.find((el) => el.filename === sample);
+  const sampleItem = samples.find((el) => el.url === sample);
 
   return (
     <>
@@ -40,7 +40,7 @@ export default async function PDFPage({
               </div>
               <div className="flex gap-4 justify-center bg-amber-100 rounded-b-lg">
                 <Link
-                  href={`/samples/${sample.filename}`}
+                  href={`/samples/${sample.url}`}
                   scroll={false}
                   className="text-blue-400"
                 >
