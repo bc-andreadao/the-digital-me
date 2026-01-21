@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
 import samples from "@/src/sampleData";
 
 export default function Resume() {
@@ -16,7 +16,7 @@ export default function Resume() {
           >
             <p>{sample.type}</p>
             <Image
-                className="w-full h-auto"
+              className="w-full h-auto"
               src="/pencil.jpg"
               alt="sample image"
               width={300}

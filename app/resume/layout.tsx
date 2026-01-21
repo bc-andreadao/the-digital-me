@@ -1,16 +1,15 @@
 import React from "react";
 
 interface Props {
-    modal: React.ReactNode;
-    children: React.ReactNode;
+  modal: React.ReactNode;
+  children: React.ReactNode;
 }
 
-export default function ResumeLayout ( {modal, children}: Props ) {
-    return (
-        <>
-        {modal}
-        {children}
-        </>
-
-    )
+export default function ResumeLayout({ modal, children }: Props) {
+  return (
+    <>
+      {modal}
+      {children}
+    </>
+  );
 }
