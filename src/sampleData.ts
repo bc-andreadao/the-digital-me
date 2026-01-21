@@ -34,7 +34,7 @@ const samples: sampleData[] = [
             "type": "Article"
         },
         {
-            "title": "BigCommerce for Wordpress (BC4WP) Documentation Update",
+            "title": "BigCommerce for Wordpress (BC4WP): Documentation Update",
             "description": "Read about the streamlined workflow for updating reference documentation for the open-source BC4WP plugin",
             "url": "bc4wp-documentation-update",
             "sampleURL": "https://developer.bigcommerce.com/resource-hub/bc4wp-documentation-update",
