@@ -12,7 +12,7 @@ export default async function PDFPage({
 
   return (
     <>
-      <div className="text-center pt-20 pb-15 px-10 bg-gray-100">
+      <div className="text-center pt-20 pb-15 px-10 bg-gray-100 text-gray-900">
         <h1 className="font-bold text-2xl sm:text-3xl p-3">
           Portfolio Samples
         </h1>
@@ -33,23 +33,21 @@ export default async function PDFPage({
                 height={200}
               />
               <div className="p-3">
-                <h3 className="pb-2 text-lg sm:text-xl text-gray-900">
+                <h3 className="pb-2 text-lg sm:text-xl">
                   {sample.title}
                 </h3>
                 <p className="text-gray-500">{sample.description}</p>
               </div>
-              <div className="flex gap-4 justify-center bg-amber-100 rounded-b-lg">
+              <div className="flex gap-4 justify-center bg-amber-100 rounded-b-lg text-blue-400">
                 <Link
                   href={`/samples/${sample.url}`}
                   scroll={false}
-                  className="text-blue-400"
                 >
                   Learn more
                 </Link>
                 <Link
                   href={`${sample.sampleURL}`}
                   scroll={false}
-                  className="text-blue-400"
                 >
                   View sample
                 </Link>
