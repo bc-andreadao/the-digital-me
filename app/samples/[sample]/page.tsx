@@ -17,7 +17,7 @@ export default async function PDFPage({
           Portfolio Samples
         </h1>
         <h2 className="text-lg sm:text-xl">Andrea Dao</h2>
-        <p>Developer Relations, Technical Communicator</p>
+        <p>Technical Writer</p>
         <section className="grid sm:grid-cols-2 lg:grid-cols-3 justify-center gap-x-[3%] ">
           {samples.map((sample, i) => (
             <div
