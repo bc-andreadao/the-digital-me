@@ -47,6 +47,38 @@ export default function Resume() {
           </div>
         ))}
       </section>
+      <h2 className="pt-10 pb-5 text-left text-lg sm:text-xl">
+        Other Relevant Work:
+      </h2>
+      <div className="flex flex-col gap-2 text-left">
+        <ul className="list-disc list-inside">
+          <li>
+            <Link
+              href="https://developer.bigcommerce.com/resource-hub/catalyst-c15t-consent"
+              className="text-blue-400"
+            >
+              Custom c15t Consent Management
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://developer.bigcommerce.com/resource-hub/nextjs-suspense"
+              className="text-blue-400"
+            >
+              Understanding Suspense in NextJS
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="https://developer.bigcommerce.com/resource-hub/laravel-react-app-with-tmux"
+              className="text-blue-400"
+            >
+              Run Your Laravel React App with Tmux
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
