@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import samples from "@/src/sampleData";
+import samples, { relevantLinks } from "@/src/sampleData";
 
 export default function Resume() {
   return (
@@ -8,7 +8,7 @@ export default function Resume() {
       <h1 className="font-bold text-2xl sm:text-3xl p-3">Portfolio Samples</h1>
       <h2 className="text-lg sm:text-xl">Andrea Dao</h2>
       <p>Technical Writer</p>
-      <section className="grid sm:grid-cols-2 lg:grid-cols-3 justify-center gap-x-[3%] ">
+      <section className="grid sm:grid-cols-2 lg:grid-cols-3 justify-center gap-x-[3%]">
         {samples.map((sample, i) => (
           <div
             key={i}
@@ -52,31 +52,14 @@ export default function Resume() {
       </h2>
       <div className="flex flex-col gap-2 text-left">
         <ul className="list-disc list-inside">
-          <li>
-            <Link
-              href="https://developer.bigcommerce.com/resource-hub/catalyst-c15t-consent"
-              className="text-blue-400"
-            >
-              Custom c15t Consent Management
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://developer.bigcommerce.com/resource-hub/nextjs-suspense"
-              className="text-blue-400"
-            >
-              Understanding Suspense in NextJS
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              href="https://developer.bigcommerce.com/resource-hub/laravel-react-app-with-tmux"
-              className="text-blue-400"
-            >
-              Run Your Laravel React App with Tmux
-            </Link>
-          </li>
+          {relevantLinks.map((link, i) => (
+            <li key={i}>
+              <Link href={`${link.url}`} className="text-blue-400">
+                {link.title}:
+              </Link>
+              <p className="text-gray-500 inline p-2">{link.description}</p>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

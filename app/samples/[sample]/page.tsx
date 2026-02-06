@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import samples from "@/src/sampleData";
+import samples, { relevantLinks } from "@/src/sampleData";
 
 export default async function PDFPage({
   params,
@@ -52,31 +52,14 @@ export default async function PDFPage({
         </h2>
         <div className="flex flex-col gap-2 text-left">
           <ul className="list-disc list-inside">
-            <li>
-              <Link
-                href="https://developer.bigcommerce.com/resource-hub/catalyst-c15t-consent"
-                className="text-blue-400"
-              >
-                Custom c15t Consent Management
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://developer.bigcommerce.com/resource-hub/nextjs-suspense"
-                className="text-blue-400"
-              >
-                Understanding Suspense in NextJS
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                href="https://developer.bigcommerce.com/resource-hub/laravel-react-app-with-tmux"
-                className="text-blue-400"
-              >
-                Run Your Laravel React App with Tmux
-              </Link>
-            </li>
+            {relevantLinks.map((link, i) => (
+              <li key={i}>
+                <Link href={`${link.url}`} className="text-blue-400">
+                  {link.title}
+                </Link>
+                <p className="text-gray-500 inline p-2">{link.description}</p>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
