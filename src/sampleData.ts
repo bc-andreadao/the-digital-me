@@ -8,6 +8,12 @@ type sampleData = {
     type?: string;
 };
 
+type relevantLink = {
+    title: string;
+    url: string;
+    description?: string;
+}
+
 const samples: sampleData[] = [
         {
             "title": "C15t Meets Catalyst: Consent Management Made Easy",
