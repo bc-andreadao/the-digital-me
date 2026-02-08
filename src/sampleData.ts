@@ -66,3 +66,5 @@ const samples: sampleData[] = [
     ]
 
 export default samples;
+
+export const relevantLinks: relevantLink[] = []

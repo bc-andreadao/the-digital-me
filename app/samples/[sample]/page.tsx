@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import samples from "@/src/sampleData";
+import samples, { relevantLinks } from "@/src/sampleData";
 
 export default async function PDFPage({
   params,
@@ -17,7 +17,7 @@ export default async function PDFPage({
           Portfolio Samples
         </h1>
         <h2 className="text-lg sm:text-xl">Andrea Dao</h2>
-        <p>Developer Relations, Technical Communicator</p>
+        <p>Developer Content</p>
         <section className="grid sm:grid-cols-2 lg:grid-cols-3 justify-center gap-x-[3%] ">
           {samples.map((sample, i) => (
             <div
@@ -33,28 +33,35 @@ export default async function PDFPage({
                 height={200}
               />
               <div className="p-3">
-                <h3 className="pb-2 text-lg sm:text-xl">
-                  {sample.title}
-                </h3>
+                <h3 className="pb-2 text-lg sm:text-xl">{sample.title}</h3>
                 <p className="text-gray-500">{sample.description}</p>
               </div>
               <div className="flex gap-4 justify-center bg-amber-100 rounded-b-lg text-blue-400">
-                <Link
-                  href={`/samples/${sample.url}`}
-                  scroll={false}
-                >
+                <Link href={`/samples/${sample.url}`} scroll={false}>
                   Learn more
                 </Link>
-                <Link
-                  href={`${sample.sampleURL}`}
-                  scroll={false}
-                >
+                <Link href={`${sample.sampleURL}`} scroll={false}>
                   View sample
                 </Link>
               </div>
             </div>
           ))}
         </section>
+        <h2 className="pt-10 pb-5 text-left text-lg sm:text-xl">
+          {relevantLinks.length > 0 ? "Other Relevant Work" : ""}
+        </h2>
+        <div className="flex flex-col gap-2 text-left">
+          <ul className="list-disc list-inside">
+            {relevantLinks.map((link, i) => (
+              <li key={i}>
+                <Link href={`${link.url}`} className="text-blue-400">
+                  {link.title}
+                </Link>
+                <p className="text-gray-500 inline p-2">{link.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       <dialog
         className="fixed top-[15%] left-1/7 w-3/4 h-3/4 bg-gray-300 p-8 rounded border-none shadow-lg z-[9999]"
