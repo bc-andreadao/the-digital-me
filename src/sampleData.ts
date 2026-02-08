@@ -24,6 +24,14 @@ const samples: sampleData[] = [
             "type": "User Guide"
         },
         {
+            "title": "Documenting Server-to-Server APIs for Localization Features",
+            "description": "Read an overview on how to get started adding translations for BigCommerce store.",
+            "url": "server-to-server-apis",
+            "sampleURL": "https://github.com/bigcommerce/docs/blob/main/docs/store-operations/catalog/msf-international-enhancements/msf-international-enhancements.mdx",
+            "about": "I documented GraphQL schemas and queries for adding product translations to a BigCommerce store. I collaborated with the product and engineering team to gather the use cases and technical details of the server-to-server APIs and translated that information into concise documentation. I created and tested examples based on the schemas I received from the engineeering team.",
+            "type": "Overview & Reference"
+        },
+        {
             "title": "Diataxis Templates for Developer Documentation",
             "description": "Learn about the Diataxis-based templates I created to help structure documentation for different user needs.",
             "url": "documentation-templates",
