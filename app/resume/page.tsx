@@ -7,7 +7,7 @@ export default function Resume() {
     <div className="text-center pt-20 pb-15 px-10 bg-gray-100">
       <h1 className="font-bold text-2xl sm:text-3xl p-3">Portfolio Samples</h1>
       <h2 className="text-lg sm:text-xl">Andrea Dao</h2>
-      <p>Developer Content</p>
+      <p></p>
       <section className="grid sm:grid-cols-2 lg:grid-cols-3 justify-center gap-x-[3%]">
         {samples.map((sample, i) => (
           <div
@@ -29,13 +29,6 @@ export default function Resume() {
               <p className="text-gray-500">{sample.description}</p>
             </div>
             <div className="flex gap-4 justify-center bg-amber-100 rounded-b-lg">
-              <Link
-                href={`/samples/${sample.url}`}
-                scroll={false}
-                className="text-blue-400"
-              >
-                Learn more
-              </Link>
               <Link
                 href={`${sample.sampleURL}`}
                 scroll={false}
