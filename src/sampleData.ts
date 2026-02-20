@@ -31,14 +31,6 @@ const samples: sampleData[] = [
             "about": "",
             "type": "Article"
         },
-        {
-            "title": "Laravel React Sample App: API Client Open-Source Contribution",
-            "description": "Read about my open-source contrbutions to the Laravel React Sample app, focusing on API client pagination",
-            "url": "sample-app-update",
-            "sampleURL": "https://developer.bigcommerce.com/resource-hub/laravel-react-api-client-pagination",
-            "about": "",
-            "type": "Article"
-        },
     ]
 
 export default samples;
