@@ -17,25 +17,25 @@ type relevantLink = {
 const samples: sampleData[] = [
         {
             "title": "C15t Meets Catalyst: Consent Management Made Easy",
-            "description": "Learn how BigCommerce manages consent preferences in our Next.js app with a custom c15t implementation",
+            "description": "View my demo on how a Catalyst sample app manages shopper consent using an open-source c15t integration",
             "url": "c15t-consent-management",
             "sampleURL": "https://developer.bigcommerce.com/resource-hub/catalyst-c15t-consent",
             "about": "",
             "type": "Article"
         },
         {
-            "title": "Laravel React Sample App: API client update for pagination",
-            "description": "Read about updates to the Laravel React Sample app, focusing on how the API client handles pagination",
-            "url": "sample-app-update",
-            "sampleURL": "https://developer.bigcommerce.com/resource-hub/laravel-react-api-client-pagination",
+            "title": "Proxying API Requests in Catalyst and Makeswift with Next.js Routes",
+            "description": "Learn how you can proxy GraphQL requests in a Catalyst sample app with a Makeswift integration",
+            "url": "proxy-nextjs-routes",
+            "sampleURL": "https://developer.bigcommerce.com/resource-hub/api-route-handlers-catalyst",
             "about": "",
             "type": "Article"
         },
         {
-            "title": "Proxying API Requests in Catalyst and Makeswift with Next.js Routes",
-            "description": "Read how BigCommerce proxies GraphQL requests in a NextJS app with a Makeswift integration",
-            "url": "proxy-nextjs-routes",
-            "sampleURL": "https://developer.bigcommerce.com/resource-hub/api-route-handlers-catalyst",
+            "title": "Laravel React Sample App: API Client Open-Source Contribution",
+            "description": "Read about my open-source contrbutions to the Laravel React Sample app, focusing on API client pagination",
+            "url": "sample-app-update",
+            "sampleURL": "https://developer.bigcommerce.com/resource-hub/laravel-react-api-client-pagination",
             "about": "",
             "type": "Article"
         },
