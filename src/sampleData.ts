@@ -24,7 +24,7 @@ const samples: sampleData[] = [
             "type": "Article"
         },
         {
-            "title": "Laravel React Sample App - API client update for pagination",
+            "title": "Laravel React Sample App: API client update for pagination",
             "description": "Read about updates to the Laravel React Sample app, focusing on how the API client handles pagination",
             "url": "sample-app-update",
             "sampleURL": "https://developer.bigcommerce.com/resource-hub/laravel-react-api-client-pagination",
