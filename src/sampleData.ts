@@ -32,11 +32,11 @@ const samples: sampleData[] = [
             "type": "Article"
         },
         {
-            "title": "BigCommerce for Wordpress (BC4WP) Documentation Update",
-            "description": "Learn how I streamlined a workflow to increase external contributions to the open-source BC4WP documentation",
-            "url": "bc4wp-documentation-update",
-            "sampleURL": "https://developer.bigcommerce.com/resource-hub/bc4wp-documentation-update",
-            "about": "This article explains how I automated a workflow for updating BigCommerce for WordPress (BC4WP) reference documentation. I piloted the workflow so that reference documentation could be maintained at large scale while supporting external contributions.\n\nFirst, I added DocBlocks in the BC4WP source code for its classes, methods, and hooks. Then, I created a GitHub Action that parses source-code DocBlocks and outputs the reference documentation to Markdown files. The workflow runs a shell script that uses Docker to run a phpDocumentor. I then rendered the Markdown with a Nextra site and deploy the site on Vercel. External contributors can manually trigger the workflow to update the documentation when they update DocBlock descriptions.\n\nThe sample shows I have experience working with the following:\n\n- Docs-as-code workflows\n- GitHub actions, CI/CD, automations\n- Markdown, static site generators (Nextra)\n- Writing DocBlocks & reading production code\n- Maintaining large docs at scale\n- Process and editorial improvements\n- Contribution workflows, review/rollback, and preview environments\n- AI tools to facilitate documentatation (writing DocBlocks, creating workflows)",
+            "title": "Localizing a Catalyst Storefront into Multiple Languages",
+            "description": "Read an end-to-end guide that includes best practices on how to set up multi-language support for a BigCommerce storefront",
+            "url": "localization-guide",
+            "sampleURL": "https://developer.bigcommerce.com/docs/storefront/catalyst/features/localization/multi-language/setup",
+            "about": "",
             "type": "Article"
         },
     ]
