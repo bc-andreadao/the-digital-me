@@ -37,9 +37,6 @@ export default async function PDFPage({
                 <p className="text-gray-500">{sample.description}</p>
               </div>
               <div className="flex gap-4 justify-center bg-amber-100 rounded-b-lg text-blue-400">
-                <Link href={`/samples/${sample.url}`} scroll={false}>
-                  Learn more
-                </Link>
                 <Link href={`${sample.sampleURL}`} scroll={false}>
                   View sample
                 </Link>

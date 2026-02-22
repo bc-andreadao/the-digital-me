@@ -30,13 +30,6 @@ export default function Resume() {
             </div>
             <div className="flex gap-4 justify-center bg-amber-100 rounded-b-lg">
               <Link
-                href={`/samples/${sample.url}`}
-                scroll={false}
-                className="text-blue-400"
-              >
-                Learn more
-              </Link>
-              <Link
                 href={`${sample.sampleURL}`}
                 scroll={false}
                 className="text-blue-400"
