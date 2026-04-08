@@ -40,22 +40,6 @@ const samples: sampleData[] = [
             "type": "Article"
         },
         {
-            "title": "BigCommerce for WordPress (BC4WP): Documentation Update",
-            "description": "Read about the streamlined workflow for updating reference documentation for the open-source BC4WP plugin",
-            "url": "bc4wp-documentation-update",
-            "sampleURL": "https://developer.bigcommerce.com/resource-hub/bc4wp-documentation-update",
-            "about": "This article explains the streamlined workflow for updating BigCommerce for WordPress (BC4WP) reference documentation. It was written for external developers using BC4WP. The purpose was to invite community feedback and participation to an open source repository.\n\nThis sample demonstrates how I made a workflow transparent to lower the barrier for community participation. The workflow involves a Github action file that parses source-code docblocks and outputs the reference documentation to markdown files. External contributors can manually trigger the workflow to update the documentation if they update docblock descriptions. I created a video to show community members how to contribute to the docs. I also updated the contributing.md file in the BC4WP open source repository to include instructions for contributing. \n\n",
-            "type": "Article"
-        },
-        {
-            "title": "Improving the Docs: Understanding an Audience from the Ground Up",
-            "description": "Read about how I became a better technical communicator by connecting hands-on learning to documentation",
-            "url": "technical-communication",
-            "sampleURL": "https://developer.bigcommerce.com/resource-hub/understanding-an-audience-from-ground-up",
-            "about": "This blog explains how I became a better technical communicator and demonstrates audience awareness. It touches on communication concepts such as preserving a beginner’s mindset, understanding how end-users interact with tooling, and pinpointing details that may be important to your audience. I wrote the article for technical communicators writing for novice developers. \n\nIn the blog, I walk through how I approached a concrete, real life example involving popular clients based on my experience at a bootcamp. I tie the bootcamp curriculum back to the tech stack at BigCommerce. To prevent information overload, I balance technical detail with narrative and choose which relevant details to include. I used ChatGPT to edit some sentences to add clarity to the technical pieces. \n\nThis sample demonstrates my systematic process for thinking about developer experience. It shows I can make a piece of writing both engaging and educational, while connecting learning to business goals.  ",
-            "type": "Article"
-        },
-        {
             "title": "Proxying API Requests in Catalyst and Makeswift with Next.js Routes",
             "description": "Watch how BigCommerce proxies GraphQL requests in a NextJS app with a Makeswift integration",
             "url": "proxy-nextjs-routes",
