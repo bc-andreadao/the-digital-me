@@ -24,12 +24,12 @@ const samples: sampleData[] = [
             "type": "Article"
         },
         {
-            "title": "Keep it Streaming: Understanding Suspense in NextJS",
-            "description": "Learn how to use Suspense and Streaming from React to handle asynchronous data fetches in NextJS",
-            "url": "nextjs-suspense",
-            "sampleURL": "https://developer.bigcommerce.com/resource-hub/nextjs-suspense",
-            "about": "This blog teaches how to use Suspense and Streaming from React to handle asynchronous data fetches in NextJS. I wrote it for BigCommerce developers new to the NextJS framework that want to use Catalyst. The purpose is to provide support for BigCommerce developers new to NextJS so they can adopt our new platform.\n\nMy article fits into a deeper educational content strategy. Earlier, my team member held a conference workshop on the Streaming patterns built into Catalyst. I wrote my article to segway into the deeper workshop material that demonstrates the patterns built into Catalyst. To complement his workshop, I took parts of his code related to styling and sample data. I read through existing NextJS docs and wrote the basic code samples. I tested the samples and created the screen recordings.\n\nI used a narrative walkthrough to explain the concepts. I introduced a problem that needs to be solved, the solution that the framework introduces, and a basic code sample. I also ask readers to visit the code on specific branches of a repository they need to clone and then comment on what they should see when they run the code locally. The demos are basic examples and use dummy data returned from a fetch simulation.  \n\nOverall, this sample demonstrates how I build educational materials to provide support for the tech stack that BigCommerce uses. It teaches BigCommerce developers core NextJS concepts so they have a lower learning curve when using our tech stack.\n\n",
-            "type": "Article"
+            "title": "Localization Guide for SaaS Storefronts",
+            "description": "Read an end-to-end guide on how to set up multi-language support for a BigCommerce storefront",
+            "url": "user-guide",
+            "sampleURL": "https://github.com/bigcommerce/docs/blob/dc93fe8b75af38d27f8386e44f3a9c211b2c5819/docs/storefront/catalyst/content-management/internationalization/multi-language/setup.mdx",
+            "about": "I wrote an end-to-end user guide that shows developers how to set up multi-language support for an ecommerce storefront. The guide covers topics such as configuring language settings and translating content. I collaborated with the product team to ensure the guide accurately reflects the latest features and functionalities of the SaaS platform.\n\nOverall, this sample shows how I create comprehensive user documentation that helps developers reach a global audience through multi-language support.",
+            "type": "User Guide"
         },
         {
             "title": "Stop Juggling Terminals: Run Your Laravel React App with Tmux",
